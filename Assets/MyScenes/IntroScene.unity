@@ -1456,7 +1456,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32
   m_InteractionLayers:
-    m_Bits: 32
+    m_Bits: 544
   m_AttachTransform: {fileID: 550743787}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -4079,8 +4079,8 @@ LineRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
+    numCornerVertices: 4
+    numCapVertices: 3
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
@@ -4104,7 +4104,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32
   m_InteractionLayers:
-    m_Bits: 32
+    m_Bits: 544
   m_AttachTransform: {fileID: 287827164}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -4248,11 +4248,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4290462493969425351, guid: 3ff543da976e06d4aa25941e5189f81c,
+        type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5904804582164372283, guid: 3ff543da976e06d4aa25941e5189f81c,
         type: 3}
       propertyPath: m_Name
       value: RightHandController
       objectReference: {fileID: 0}
+    - target: {fileID: 6435121064342309795, guid: 3ff543da976e06d4aa25941e5189f81c,
+        type: 3}
+      propertyPath: UILineRenderer
+      value: 
+      objectReference: {fileID: 1713383441}
     - target: {fileID: 7469586821250771240, guid: 3ff543da976e06d4aa25941e5189f81c,
         type: 3}
       propertyPath: m_RootOrder
