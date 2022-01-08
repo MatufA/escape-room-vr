@@ -50,7 +50,7 @@ public class AlignmentTrigger : MonoBehaviour
 
             if (match.ExternalAxisMode == Mode.View)
             {
-                worldExternal =  MasterController.Instance.Rig.Camera.transform.TransformVector(match.ExternalAxis);
+                worldExternal =  MasterController.Instance.Rig.Origin.transform.TransformVector(match.ExternalAxis);
             }
             else
             {
