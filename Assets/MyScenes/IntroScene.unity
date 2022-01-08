@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 19857097}
   - component: {fileID: 19857096}
   - component: {fileID: 19857095}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,6 +290,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19857093}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &42443624 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1833191625520553981, guid: 21a9b655c2d703344abc684145092a05,
+    type: 3}
+  m_PrefabInstance: {fileID: 189187868}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8252fcde549ed1c46b71d64b4166f814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &45522494
 GameObject:
   m_ObjectHideFlags: 0
@@ -299,7 +311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 45522495}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,6 +427,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &89763270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+    type: 3}
+  m_PrefabInstance: {fileID: 791139622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &100885023
 GameObject:
   m_ObjectHideFlags: 0
@@ -428,7 +446,7 @@ GameObject:
   - component: {fileID: 100885027}
   - component: {fileID: 100885026}
   - component: {fileID: 100885025}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +533,7 @@ GameObject:
   - component: {fileID: 105013943}
   - component: {fileID: 105013945}
   - component: {fileID: 105013944}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Lock Pad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,7 +617,7 @@ GameObject:
   - component: {fileID: 115894774}
   - component: {fileID: 115894776}
   - component: {fileID: 115894775}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,7 +965,7 @@ GameObject:
   - component: {fileID: 124211101}
   - component: {fileID: 124211103}
   - component: {fileID: 124211102}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1469,11 +1487,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 204317206}
     m_Modifications:
-    - target: {fileID: 2282336950282846496, guid: 21a9b655c2d703344abc684145092a05,
-        type: 3}
-      propertyPath: m_InteractionManager
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2282336950282846497, guid: 21a9b655c2d703344abc684145092a05,
         type: 3}
       propertyPath: m_Name
@@ -1482,7 +1495,7 @@ PrefabInstance:
     - target: {fileID: 2282336950282846500, guid: 21a9b655c2d703344abc684145092a05,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2282336950282846500, guid: 21a9b655c2d703344abc684145092a05,
         type: 3}
@@ -1635,19 +1648,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2f4617667341945b5a7756e14b62d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1865101541}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 4294967295
-  m_SelectMode: 0
+    m_Bits: 1056
+  m_SelectMode: 1
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 42443624}
         m_TargetAssemblyTypeName: TeleporterAnim, Assembly-CSharp
         m_MethodName: StartHighlight
         m_Mode: 1
@@ -1662,7 +1675,7 @@ MonoBehaviour:
   m_LastHoverExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 42443624}
         m_TargetAssemblyTypeName: TeleporterAnim, Assembly-CSharp
         m_MethodName: StopHighlight
         m_Mode: 1
@@ -1725,7 +1738,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_TeleportationProvider: {fileID: 0}
+  m_TeleportationProvider: {fileID: 1954589738}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
   m_Teleporting:
@@ -1741,7 +1754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204317206}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TeleporterAnchors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1759,6 +1772,7 @@ Transform:
   m_LocalPosition: {x: 2.3213866, y: 0.044, z: 1.0360715}
   m_LocalScale: {x: 1, y: 0.01, z: 1}
   m_Children:
+  - {fileID: 89763270}
   - {fileID: 189187869}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -2097,7 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1865101541}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 32
@@ -2379,7 +2393,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 232796433}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2443,7 +2457,7 @@ GameObject:
   - component: {fileID: 328528115}
   - component: {fileID: 328528114}
   - component: {fileID: 328528113}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Lock Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2868,7 +2882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1865101541}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -2903,7 +2917,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 1
   m_HideControllerOnSelect: 0
-  m_AllowHoveredActivate: 0
+  m_AllowHoveredActivate: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -2955,7 +2969,7 @@ MonoBehaviour:
     m_Bits: 1024
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
-  m_HoverToSelect: 0
+  m_HoverToSelect: 1
   m_HoverTimeToSelect: 0.5
   m_EnableUIInteraction: 1
   m_AllowAnchorControl: 1
@@ -3005,7 +3019,7 @@ GameObject:
   - component: {fileID: 408036800}
   - component: {fileID: 408036802}
   - component: {fileID: 408036801}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3337,7 +3351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1865101541}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -3372,7 +3386,7 @@ MonoBehaviour:
       m_Calls: []
   m_SelectActionTrigger: 1
   m_HideControllerOnSelect: 0
-  m_AllowHoveredActivate: 0
+  m_AllowHoveredActivate: 1
   m_PlayAudioClipOnSelectEntered: 0
   m_AudioClipForOnSelectEntered: {fileID: 0}
   m_PlayAudioClipOnSelectExited: 0
@@ -3476,7 +3490,7 @@ GameObject:
   - component: {fileID: 521211134}
   - component: {fileID: 521211133}
   - component: {fileID: 521211132}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3564,7 +3578,7 @@ GameObject:
   - component: {fileID: 543508120}
   - component: {fileID: 543508119}
   - component: {fileID: 543508118}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3769,7 +3783,7 @@ GameObject:
   - component: {fileID: 596447682}
   - component: {fileID: 596447684}
   - component: {fileID: 596447683}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3927,7 +3941,7 @@ GameObject:
   - component: {fileID: 666521435}
   - component: {fileID: 666521437}
   - component: {fileID: 666521436}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4007,7 +4021,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 668765059}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4116,7 +4130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 700226817}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4372,7 +4386,7 @@ GameObject:
   - component: {fileID: 776017735}
   - component: {fileID: 776017737}
   - component: {fileID: 776017736}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Code Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4445,47 +4459,52 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 204317206}
     m_Modifications:
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.787
+      value: 4.250695
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -4.4
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.494
+      value: 1.6549039
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.51073796
+      value: 0.9999875
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.8597365
+      value: 0.005009204
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4180064242812793427, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
@@ -4505,7 +4524,33 @@ PrefabInstance:
     - target: {fileID: 4180064242812793430, guid: dfa7c32c925f80d45adbcf6ed05adc61,
         type: 3}
       propertyPath: m_Name
-      value: TeleportationAnchor
+      value: TeleportationStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180064242812793431, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+        type: 3}
+      propertyPath: m_CustomReticle
+      value: 
+      objectReference: {fileID: 2663450942975863113, guid: 2ed38cd6755f763469944dc94449ee0a,
+        type: 3}
+    - target: {fileID: 4180064242812793431, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+        type: 3}
+      propertyPath: m_TeleportTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180064242812793431, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1865101541}
+    - target: {fileID: 4180064242812793431, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+        type: 3}
+      propertyPath: m_TeleportationProvider
+      value: 
+      objectReference: {fileID: 1954589738}
+    - target: {fileID: 4180064242812793431, guid: dfa7c32c925f80d45adbcf6ed05adc61,
+        type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 1056
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfa7c32c925f80d45adbcf6ed05adc61, type: 3}
@@ -4518,7 +4563,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 805504223}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Row (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4554,7 +4599,7 @@ GameObject:
   - component: {fileID: 835128696}
   - component: {fileID: 835128695}
   - component: {fileID: 835128694}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4648,7 +4693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 856309973}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4680,7 +4725,7 @@ GameObject:
   - component: {fileID: 876659251}
   - component: {fileID: 876659253}
   - component: {fileID: 876659252}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4764,7 +4809,7 @@ GameObject:
   - component: {fileID: 915046330}
   - component: {fileID: 915046329}
   - component: {fileID: 915046328}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4853,8 +4898,6 @@ GameObject:
   - component: {fileID: 988268404}
   - component: {fileID: 988268403}
   - component: {fileID: 988268407}
-  - component: {fileID: 988268408}
-  - component: {fileID: 988268406}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -4976,27 +5019,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 988268401}
   m_CullTransparentMesh: 1
---- !u!114 &988268406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988268401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab68ce6587aab0146b8dabefbd806791, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ClickSpeed: 0.3
-  m_MoveDeadzone: 0.6
-  m_RepeatDelay: 0.5
-  m_RepeatRate: 0.1
-  m_TrackedDeviceDragThresholdMultiplier: 1.4
-  m_MaxTrackedDeviceRaycastDistance: 1000
-  m_EnableXRInput: 1
-  m_EnableMouseInput: 1
-  m_EnableTouchInput: 1
 --- !u!114 &988268407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5054,21 +5076,6 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   m_HasMigratedActions: 1
---- !u!114 &988268408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988268401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!1 &1013721333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,7 +5088,7 @@ GameObject:
   - component: {fileID: 1013721337}
   - component: {fileID: 1013721336}
   - component: {fileID: 1013721335}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5177,7 +5184,7 @@ GameObject:
   - component: {fileID: 1027209394}
   - component: {fileID: 1027209396}
   - component: {fileID: 1027209395}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5412,6 +5419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 367b9ac35c80c4befb714a2f83ee5e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  codeLength: 4
+  intoClue: {fileID: 643054226}
+  lockCode: {fileID: 328528113}
 --- !u!1 &1080811467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,7 +5434,7 @@ GameObject:
   - component: {fileID: 1080811471}
   - component: {fileID: 1080811470}
   - component: {fileID: 1080811469}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5627,7 +5637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1095674659}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Row
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5760,7 +5770,7 @@ GameObject:
   - component: {fileID: 1096981780}
   - component: {fileID: 1096981779}
   - component: {fileID: 1096981778}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5845,7 +5855,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1148209275}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5920,7 +5930,7 @@ GameObject:
   - component: {fileID: 1202905353}
   - component: {fileID: 1202905355}
   - component: {fileID: 1202905354}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5999,7 +6009,7 @@ GameObject:
   - component: {fileID: 1240455449}
   - component: {fileID: 1240455451}
   - component: {fileID: 1240455450}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6151,7 +6161,7 @@ GameObject:
   - component: {fileID: 1268739497}
   - component: {fileID: 1268739496}
   - component: {fileID: 1268739495}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6247,7 +6257,7 @@ GameObject:
   - component: {fileID: 1271787844}
   - component: {fileID: 1271787846}
   - component: {fileID: 1271787845}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6331,7 +6341,7 @@ GameObject:
   - component: {fileID: 1293550962}
   - component: {fileID: 1293550961}
   - component: {fileID: 1293550960}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6498,7 +6508,7 @@ GameObject:
   - component: {fileID: 1385953899}
   - component: {fileID: 1385953898}
   - component: {fileID: 1385953897}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6592,7 +6602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1473126355}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6703,7 +6713,7 @@ GameObject:
   - component: {fileID: 1488127423}
   - component: {fileID: 1488127425}
   - component: {fileID: 1488127424}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6785,7 +6795,7 @@ GameObject:
   - component: {fileID: 1514659652}
   - component: {fileID: 1514659654}
   - component: {fileID: 1514659653}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6867,7 +6877,7 @@ GameObject:
   - component: {fileID: 1526027844}
   - component: {fileID: 1526027846}
   - component: {fileID: 1526027845}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6948,7 +6958,7 @@ GameObject:
   - component: {fileID: 1532060495}
   - component: {fileID: 1532060498}
   - component: {fileID: 1532060497}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7035,7 +7045,7 @@ GameObject:
   - component: {fileID: 1535081833}
   - component: {fileID: 1535081835}
   - component: {fileID: 1535081834}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7114,7 +7124,7 @@ GameObject:
   - component: {fileID: 1579341495}
   - component: {fileID: 1579341497}
   - component: {fileID: 1579341496}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7193,7 +7203,7 @@ GameObject:
   - component: {fileID: 1687381409}
   - component: {fileID: 1687381411}
   - component: {fileID: 1687381410}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7519,7 +7529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1865101541}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 32
@@ -7804,7 +7814,7 @@ GameObject:
   - component: {fileID: 1742119222}
   - component: {fileID: 1742119221}
   - component: {fileID: 1742119220}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7901,7 +7911,7 @@ GameObject:
   - component: {fileID: 1772658511}
   - component: {fileID: 1772658510}
   - component: {fileID: 1772658509}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: External Lock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8274,6 +8284,49 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ff543da976e06d4aa25941e5189f81c, type: 3}
+--- !u!1 &1865101540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1865101542}
+  - component: {fileID: 1865101541}
+  m_Layer: 5
+  m_Name: XR Interaction Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1865101541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865101540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1865101542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865101540}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4189999, y: 2.787, z: -4.9230003}
+  m_LocalScale: {x: -0.010759074, y: 0.014277931, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894933496
 GameObject:
   m_ObjectHideFlags: 0
@@ -8285,7 +8338,7 @@ GameObject:
   - component: {fileID: 1894933497}
   - component: {fileID: 1894933499}
   - component: {fileID: 1894933498}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8362,7 +8415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1936565176}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8394,8 +8447,9 @@ GameObject:
   - component: {fileID: 1954589740}
   - component: {fileID: 1954589739}
   - component: {fileID: 1954589738}
-  - component: {fileID: 1954589737}
   - component: {fileID: 1954589741}
+  - component: {fileID: 1954589742}
+  - component: {fileID: 1954589737}
   m_Layer: 0
   m_Name: Locomotion System
   m_TagString: Untagged
@@ -8410,7 +8464,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954589736}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc4f2c0214c9b494fa7eb5b8b2c02885, type: 3}
   m_Name: 
@@ -8421,10 +8475,8 @@ MonoBehaviour:
   m_EnableTurnLeftRight: 1
   m_EnableTurnAround: 1
   m_TurnUsage: 0
-  m_Controllers:
-  - {fileID: 0}
-  - {fileID: 0}
-  m_DeadZone: 0.8
+  m_Controllers: []
+  m_DeadZone: 0.75
 --- !u!114 &1954589738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8464,7 +8516,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1954589741
 MonoBehaviour:
@@ -8510,6 +8562,49 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
+--- !u!114 &1954589742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954589736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2213c36610e3b1c4bbf886810ed9db12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_System: {fileID: 1954589739}
+  m_TurnAmount: 45
+  m_DebounceTime: 0.5
+  m_EnableTurnLeftRight: 1
+  m_EnableTurnAround: 1
+  m_LeftHandSnapTurnAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Hand Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a1d07c24-ca50-422a-a23f-685d9fabf63b
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 1010738217276881514, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  m_RightHandSnapTurnAction:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Right Hand Snap Turn
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: a7b54797-6974-4f75-81d0-42b9c15ef1e0
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!1 &1966461274
 GameObject:
   m_ObjectHideFlags: 0
@@ -8523,7 +8618,7 @@ GameObject:
   - component: {fileID: 1966461278}
   - component: {fileID: 1966461277}
   - component: {fileID: 1966461276}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8641,7 +8736,7 @@ GameObject:
   - component: {fileID: 1976064706}
   - component: {fileID: 1976064705}
   - component: {fileID: 1976064704}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8949,7 +9044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2060471707}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: DownTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8983,7 +9078,7 @@ GameObject:
   - component: {fileID: 2063961666}
   - component: {fileID: 2063961665}
   - component: {fileID: 2063961664}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9432,7 +9527,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2097253802}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Button Row (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9467,7 +9562,7 @@ GameObject:
   - component: {fileID: 2101257006}
   - component: {fileID: 2101257008}
   - component: {fileID: 2101257007}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Key Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9612,7 +9707,7 @@ GameObject:
   - component: {fileID: 2134352327}
   - component: {fileID: 2134352326}
   - component: {fileID: 2134352325}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: Touch Botton (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
